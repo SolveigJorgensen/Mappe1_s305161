@@ -1,14 +1,13 @@
 package com.example.mappe1_s305161;
 
-import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.graphics.Insets;
@@ -16,10 +15,7 @@ import androidx.core.os.LocaleListCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import java.util.Locale;
-
-public class preferanser extends AppCompatActivity {
-
+public class Preferanser extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,5 +46,36 @@ public class preferanser extends AppCompatActivity {
             }
         });
 
+        Button antallBtn5 = findViewById(R.id.Button5);
+        antallBtn5.setOnClickListener(new View.OnClickListener(){
+            @Override
+                    public void onClick(View v){
+            SharedPreferences sharedPreferences = getSharedPreferences("Preferanser", MODE_PRIVATE);
+            SharedPreferences.Editor editor =sharedPreferences.edit();
+            editor.putInt("AntallRegnestykker", 5);
+            editor.apply();
+            }
+        });
+        Button antallBtn10 = findViewById(R.id.Button10);
+        antallBtn10.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                SharedPreferences sharedPreferences = getSharedPreferences("Preferanser", MODE_PRIVATE);
+                SharedPreferences.Editor editor =sharedPreferences.edit();
+                editor.putInt("AntallRegnestykker", 10);
+                editor.apply();
+            }
+        });
+        Button antallBtn15 = findViewById(R.id.Button15);
+        antallBtn15.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                SharedPreferences sharedPreferences = getSharedPreferences("Preferanser", MODE_PRIVATE);
+                SharedPreferences.Editor editor =sharedPreferences.edit();
+                editor.putInt("AntallRegnestykker", 15);
+                editor.apply();
+            }
+        });
     }
 }
+

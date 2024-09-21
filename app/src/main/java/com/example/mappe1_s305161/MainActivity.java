@@ -36,16 +36,30 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        Button preferanser = (Button) findViewById(R.id.preferanser);
-        preferanser.setOnClickListener(new View.OnClickListener() {
+
+        Button preferanserBtn = (Button) findViewById(R.id.preferanser);
+        preferanserBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent preferanser = new Intent(MainActivity.this, preferanser.class);
-                preferanser.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT); //Istedet for å stacke alle aktiviteter vil tidligere aktivitet bli hentet frem. Dette sparer plass og lar brukeren gå tilbake uten å miste instillinger.
-                startActivity(preferanser);
-                Log.d("preferanser", "Start spillet knappen ble trykket.");
+                Intent startSpill = new Intent(MainActivity.this, Preferanser.class);
+                startSpill.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT); //Istedet for å stacke alle aktiviteter vil tidligere aktivitet bli hentet frem. Dette sparer plass og lar brukeren gå tilbake uten å miste instillinger.
+                startActivity(startSpill);
+                Log.d("StartSpillet", "Start spillet knappen ble trykket.");
 
             }
         });
+
+        Button omSpilletBtn = (Button) findViewById(R.id.omSpillet);
+        omSpilletBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent startSpill = new Intent(MainActivity.this, OmSpillet.class);
+                startSpill.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT); //Istedet for å stacke alle aktiviteter vil tidligere aktivitet bli hentet frem. Dette sparer plass og lar brukeren gå tilbake uten å miste instillinger.
+                startActivity(startSpill);
+                Log.d("StartSpillet", "Start spillet knappen ble trykket.");
+
+            }
+        });
+
     }
 }

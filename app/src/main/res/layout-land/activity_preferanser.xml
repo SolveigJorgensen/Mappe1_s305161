@@ -8,20 +8,6 @@
     tools:context=".Preferanser"
     android:background="@drawable/img_2">
 
-    <ImageButton
-        android:id="@+id/tyskBtn"
-        android:layout_width="117dp"
-        android:layout_height="88dp"
-        android:background="@null"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.725"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.36"
-        app:srcCompat="@drawable/img" />
-
     <TextView
         android:id="@+id/velgSpråk"
         android:layout_width="wrap_content"
@@ -30,36 +16,51 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.232" />
+        app:layout_constraintVertical_bias="0.087" />
 
     <ImageButton
-        android:id="@+id/norskBtn"
-        android:layout_width="127dp"
-        android:layout_height="79dp"
+        android:id="@+id/tyskBtn"
+        android:layout_width="118dp"
+        android:layout_height="124dp"
         android:background="@null"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintHorizontal_bias="0.621"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.364"
-        app:srcCompat="@drawable/img_1" />
+        app:layout_constraintVertical_bias="0.344"
+        app:srcCompat="@drawable/img" />
 
-    <Button
-        android:id="@+id/Button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#039BE5"
-        android:text="10"
+    <ImageButton
+        android:id="@+id/norskBtn"
+        android:layout_width="109dp"
+        android:layout_height="81dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.815" />
+        app:layout_constraintVertical_bias="0.366"
+        app:srcCompat="@drawable/img_1" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="342dp"
+        android:layout_height="83dp"
+        android:gravity="center"
+        android:text="@string/VelgAntall"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679" />
 
     <Button
         android:id="@+id/Button15"
@@ -69,10 +70,10 @@
         android:text="15"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintHorizontal_bias="0.653"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.815" />
+        app:layout_constraintVertical_bias="0.898" />
 
     <Button
         android:id="@+id/Button5"
@@ -82,23 +83,22 @@
         android:text="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintHorizontal_bias="0.348"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.815" />
+        app:layout_constraintVertical_bias="0.898" />
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="243dp"
-        android:layout_height="126dp"
-        android:gravity="center"
-        android:text="@string/VelgAntall"
+    <Button
+        android:id="@+id/Button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#039BE5"
+        android:text="10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.638"
-        tools:textSize="34sp" />
+        app:layout_constraintVertical_bias="0.898" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

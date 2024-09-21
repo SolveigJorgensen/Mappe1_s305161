@@ -8,6 +8,7 @@
     tools:context=".Spill"
     android:background="@drawable/img_2">
 
+
     <TextView
         android:id="@+id/regnestykke"
         android:layout_width="wrap_content"
@@ -16,21 +17,21 @@
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22" />
+        app:layout_constraintVertical_bias="0.164" />
 
     <GridLayout
         android:layout_width="271dp"
-        android:layout_height="214dp"
+        android:layout_height="190dp"
         android:columnCount="3"
         android:rowCount="4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.832">
+        app:layout_constraintVertical_bias="0.989">
 
         <Button
             android:id="@+id/btn1"
@@ -86,7 +87,6 @@
 
     </GridLayout>
 
-
     <EditText
         android:id="@+id/dittSvar"
         android:layout_width="wrap_content"
@@ -97,10 +97,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.407" />
+        app:layout_constraintVertical_bias="0.418" />
 
     <Button
         android:id="@+id/sjekkSvarButton"
@@ -110,9 +110,10 @@
         android:text="@string/sjekkSvar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.954" />
+        app:layout_constraintVertical_bias="0.859" />
 
     <TextView
         android:id="@+id/tilbakemelding"
@@ -124,21 +125,21 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47" />
+        app:layout_constraintVertical_bias="0.042" />
 
     <Button
         android:id="@+id/exitButton"
         android:layout_width="56dp"
         android:layout_height="41dp"
-        android:layout_marginStart="344dp"
+        android:layout_marginStart="672dp"
         android:backgroundTint="#BF0707"
         android:text="X"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="0.994" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,8 +2,15 @@
 <resources>
     <string name="app_name">Mappe1_s305161</string>
     <string name="velkommen">Willkommen!</string>
-    <string name="start_spill">mnn</string>
-    <string name="om_spill">fre</string>
-    <string name="preferanser">etrf</string>
-    <string name="velgSpråk">tgdg</string>
+    <string name="start_spill">Starten Sie das Spiel!</string>
+    <string name="om_spill">Über das Spiel</string>
+    <string name="preferanser">Einstellungen</string>
+    <string name="velgSpråk">Sprache auswählen:</string>
+    <string name="spillet">das Spiel</string>
+    <string name="VelgAntall">Wählen Sie die Anzahl der Rechenaufgaben</string>
+    <string name="sjekkSvar">Prüfen Sie die Antwort!</string>
+    <string name="spillFerdig">Herzlichen Glückwunsch, das Spiel ist beendet!!</string>
+    <string name="tilbakemeldingR">Hurra! Richtige Antwort!</string>
+    <string name="tilbakemeldingF">Das war knapp, versuche es noch einmal!</string>
+    <string name="spillInfo">Diese Mathe-App ist das perfekte Werkzeug zum Erlernen der Addition! Mit einem einfachen und intuitiven Spiel können Sie auf spielerische und ansprechende Weise grundlegende Additionsaufgaben üben. Viel Glück!</string>
 </resources>
